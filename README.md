@@ -5,7 +5,7 @@
   <img alt="" src= "https://img.shields.io/badge/TypeScript-black?logo=typescript&logoColor=blue"/>
 </p>
 
-<p> 너굴맨이 티스토리에 공부기록을 남기면 푸르른 깃허브가 된다.(삭-막) </p>
+<p> 너굴맨이 티스토리에 공부기록을 남기면 잔디가 심기며 푸르른 깃허브가 된다.(삭-막) </p>
 
 ## 📕 Post lists
 
