@@ -7,18 +7,16 @@ import Parser from 'rss-parser';
  * README.MD에 작성될 페이지 텍스트
  * @type {string}
  */
-let text = `# Hi there 👋
-
-## 이런 환경에 익숙해요✍🏼
-
-## 언어
+let text = `# 🦝 너굴맨의 공부 일지
 
 <p>
   <img alt="" src= "https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/> 
   <img alt="" src= "https://img.shields.io/badge/TypeScript-black?logo=typescript&logoColor=blue"/>
 </p>
 
-## 📕 Latest Blog Posts
+<p> 너굴맨이 티스토리에 공부기록을 남기면 푸르른 깃허브가 된다.(삭-막) </p>
+
+## 📕 Post lists
 
 `;
 
@@ -36,12 +34,12 @@ const parser = new Parser({
 	text += `<ul>`;
 
 	// 최신 10개의 글의 제목과 링크를 가져온 후 text에 추가
-	for (let i = 0; i < 10; i++) {
+	for (let i = 0; i < 15; i++) {
 		const { title, link } = feed.items[i];
 		console.log(`${i + 1}번째 게시물`);
 		console.log(`추가될 제목: ${title}`);
 		console.log(`추가될 링크: ${link}`);
-		text += `<li><a href='${link}' target='_blank'>${title}</a></li>`;
+		text += `<a href='${link}' target='_blank'>📌 ${title}</a>`;
 	}
 
 	text += `</ul>`;
