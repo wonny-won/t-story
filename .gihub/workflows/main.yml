@@ -40,8 +40,8 @@ jobs:
             - name: Commit README
               if: steps.verify_diff.outputs.changed == 'true'
               run: |
-                  git config --local user.email jaake0704@gmail.com
-                  git config --local user.name wonny-won
+                  git config --global user.email jaake0704@gmail.com
+                  git config --global user.name wonny-won
                   git add .
                   git commit -m "Update README.md"
                   git push origin main
