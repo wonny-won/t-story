@@ -8,8 +8,7 @@ name: Readme Update
 on:
     push:
         branches: [main]
-    pull_request:
-        branches: [main]
+
     # 1시간에 한번씩 아래 스크립트를 실행한다.
     schedule:
         - cron: '* * * * *'
